@@ -14,6 +14,7 @@ import { Component } from "@angular/core";
 export class compAcomponent{
 
 studentName:string="Bhanu prakash raju";
+studentAge:number=22;
   studentid:number=15;
   studentGender:string="Male";
   getstudentdetails(){
