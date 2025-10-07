@@ -1,0 +1,38 @@
+
+
+
+
+- <h1>{{studentName}}</h1> 
+<h1>{{studentid}}</h1>
+<h1>{{studentGender}}</h1>
+<h1>{{ getstudentdetails()}}</h1>
+
+<input type="text" [value]="name"/><br><br>
+
+<input type="text" [value]="secondname"/><br><br>
+Male<input [type]="inputtype"/>
+FeMale<input [type]="inputtype"/><br><br>
+
+<button (click)="eventclick()">submit</button><br><br>
+  <button (click)="event()">click</button><br><br>  
+ 
+<p> (mouseokver)="evntmouseover('bhanu')"</p>
+ <p (mouseover)="evntmouseover('bhanu')">hello</p>
+
+
+
+
+
+
+       <input [ngModel]="studentGender"/> 
+
+<select  [ngModel]="roleId">
+    <option value="1">Admin</option>
+     <option value="2">NonAdmin</option>
+</select> 
+<input [ngModel]="studentname"(ngModelChange)="click($event)">
+
+ <p>{{studentname}}</p>
+  
+ 
+

@@ -1,0 +1,34 @@
+
+<P #paragraph>Hello world</P>
+<span #spanName>This is span</span>
+<br>
+<input type="text" #firstname/>
+
+<br>
+<button (click)="btnclick()">clickMe</button>
+
+<button (mouseover)="btnmouse()">submit</button>
+<ng-content></ng-content>
+
+
+
+<ng-container *ngFor="let x of[1,2,3,4,5]">
+     <h2 style="background-color: green;">{{x}}</h2>
+</ng-container>>
+
+
+<ng-template #testtemplate>
+    <form>'
+        <input type="text" placeholder="surname">
+        <br>
+           <input type="text" placeholder="middlename">
+        <br>
+           <input type="text" placeholder="finalname">
+        <br>
+    </form>
+</ng-template>
+
+<ng-container #containerRef>
+
+</ng-container>
+<button (click)="btnckick()">clickeMe to generate forms</button>

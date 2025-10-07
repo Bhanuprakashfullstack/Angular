@@ -1,0 +1,76 @@
+
+<div [ngClass]="colorType=='red'?'redparagraph':''">This is ngclass</div>
+
+
+<div [ngClass]="EmployeType=='good'?'goodemploye':'bademploye'">goodemployee</div>
+
+
+<div [ngClass]="studentName=='Bhanu prakash raju'?'exampass':'examfail'">Bhanu's results</div>
+
+
+
+<div *ngIf="roleid== '1'">sercreat key BHanu1234</div>
+
+
+<div *ngIf="Myname=='prakash'">My name is prakash</div>
+
+
+<!-- local refrence which means we can add elements also in parameters in the event -->
+<button #myworld>hello world</button>
+<button (click)="eventclick(myworld)">clickMe</button>
+
+<button (mouseover)="eventclick(myworld)">clickMe</button>
+
+
+
+
+    <div *ngIf="roleid== '15';else template">
+        sercreat key BHanu1234
+    </div>
+    <ng-template #template>
+
+    <div>
+        This is ng-template it cannot display by default...
+    </div>
+</ng-template> 
+
+<h2>Option:1 using html</h2>
+<ul>
+    <li>Bhanu</li>
+    <li>Prakash</li>
+    <li>Raju</li>
+</ul>
+<h2>Option:1 using *ngFor</h2>
+<ul *ngFor="let student of Names;let $index=index">
+    <li>{{$index}}   {{student}}</li>
+</ul>
+
+
+
+
+<div [ngSwitch]=" studentId">
+    <p *ngSwitchCase="1">Bhanu is in pdtr
+
+    </p>
+
+
+<div [ngSwitch]=" studentId">
+    <p *ngSwitchCase="2">prakash is in pdtr</p>
+
+
+<div [ngSwitch]=" studentId">
+    <p *ngSwitchCase="3">kala is in pdtr</p>
+
+
+</div>
+
+
+<!-- <div *ngIf="othername=='sekhar'">Iam sekhar</div> -->
+
+
+<div *ngIf="othername=='bhanu';else val">
+    Sekhar raju</div>
+<ng-template #val>
+    <div>Iam not sekhar</div>
+</ng-template>
+
